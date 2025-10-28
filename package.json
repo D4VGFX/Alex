@@ -1,0 +1,20 @@
+{
+  "name": "Alex Natola",
+  "type": "module",
+  "version": "1.0a",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist --dotfiles"
+  },
+  "dependencies": {
+    "astro": "^5.15.1",
+    "rollup": "^4.45.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}

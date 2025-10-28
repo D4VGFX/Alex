@@ -1,0 +1,130 @@
+---
+import '../../styles/biografia.css';
+---
+<!doctype html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+		<link rel="icon" href="/favicon.svg" type="image/x-icon">
+		<title>Alex Natola | Biografia</title>
+	</head>
+	<body>
+		<input type="radio" name="menu" id="menu-none" checked class="menu-input" hidden>
+		<input type="radio" name="menu" id="menu-left" class="menu-input" hidden>
+
+		<header class="site-header">
+			<!-- LEFT menu button: OPEN label (visible when closed) -->
+			<label for="menu-left" class="menu-btn btn-left open" title="Apri menu sinistro" aria-hidden>
+				<svg class="icon" viewBox="0 0 24 24" aria-hidden><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+			</label>
+
+			<!-- LEFT close label: VISIBLE quando menu-left è checked; target = menu-none -->
+			<label for="menu-none" class="menu-btn btn-left close" title="Chiudi menu sinistro" aria-hidden>
+				<svg class="icon" viewBox="0 0 24 24" aria-hidden><path d="M15 6L9 12l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+			</label>
+
+			<!-- CENTER: logo (object) -->
+			<div class="logo-wrap">
+				<a href="/">
+					<img src="/assets/logo.svg" class="logo-object" alt="D4V_GFX logo">
+				</a>
+			</div>
+		</header>
+
+		<!-- LEFT off-canvas panel -->
+		<aside class="side-panel side-left" aria-hidden>
+			<nav>
+				<h3>Menu</h3>
+				<ul>
+					<li class="links"><a href="/"><h4>Home</></h4></a></li>
+					<li class="links"><a href="#"><h4><strong>Biografia</strong></h4></a></li>
+					<li class="links"><a href="/discografia/"><h4>Discografia</h4></a></li>
+				</ul>
+				<hr>
+				<h3>Social Media</h3>
+				<ul>
+					<li class="links"><a href="https://www.instagram.com/alex_natola/" target="_blank"><h4>Instagram</h4></a></li>
+					<li class="links"><a href="https://www.tiktok.com/@alexnatola" target="_blank"><h4>TikTok</h4></a></li>
+					<li class="links"><a href="https://www.youtube.com/channel/UC2WGay5LobEp1_EqkA8tgUQ?sub_confirmation=1" target="_blank"><h4>YouTube</h4></a></li>
+				</ul>
+				<hr>
+				<h3>Ascolta Ora</h3>
+				<ul>
+					<li class="links"><a href="https://open.spotify.com/intl-it/artist/6qRFKl4SSQYy9E2asvfWx1" target="_blank"><h4>Spotify</h4></a></li>
+					<li class="links"><a href="https://music.apple.com/it/artist/alex-natola/1715736977" target="_blank"><h4>Apple Music</h4></a></li>
+					<li class="links"><a href="https://music.amazon.it/artists/B09ZLTSBYP/alex-natola" target="_blank"><h4>Amazon Music</h4></a></li>
+				</ul>
+				<hr>
+				<h3>Per collaborazioni</h3>
+				<ul>
+					<li class="mail links"><a href="mailto:destinatario@example.com?subject=Richiesta%20info"><h4>alexnatola@gmail.com</h4></a></li>
+				</ul>
+			</nav>
+		</aside>
+
+		<!-- Main content -->
+		<main class="main-area">
+			<h1 style="text-align: center;">Biografia</h1>
+			<section class="hero">
+				<h1>Biografia</h1>
+				<div class="container">
+					<img src="/assets/8.png" class="object" alt="Alex_8">
+					<div>
+						<h2 class="paragraph">Over six years of <b>hands-on experience</b> in design and web, with core skills in <b>branding</b>, <b>photo retouching</b>, <b>custom graphics</b> and <b>HTML, CSS and JavaScript</b>.</h2>
+						<h2 class="paragraph">The studio turns ideas into <b>complete visual stories</b>, treating each project as a mini-campaign from <b>strategic concepting</b> to <b>pixel-perfect execution</b>. Work is both <b>visually appealing</b> and optimized for print and digital, blending <b>creative insight</b> with <b>technical know-how</b> to deliver practical, polished and customized solutions.</h2>
+						<h2 class="paragraph">Deliverables aim to capture attention, clarify messages with elegance and elevate brand presence. Professional credentials include <b>Adobe Certified Professional (Photoshop & Illustrator)</b>, <b>UX fundamentals</b> and the <b>ICDL</b> certification.</h2>
+					</div>
+				</div>
+			</section>
+			<section class="hero">
+				<h1>Discografia</h1>
+				<div class="container">
+					<img src="/assets/9.png" class="object" alt="Alex_9">
+					<div>
+						<h2 class="paragraph">Over six years of <b>hands-on experience</b> in design and web, with core skills in <b>branding</b>, <b>photo retouching</b>, <b>custom graphics</b> and <b>HTML, CSS and JavaScript</b>.</h2>
+						<h2 class="paragraph">The studio turns ideas into <b>complete visual stories</b>, treating each project as a mini-campaign from <b>strategic concepting</b> to <b>pixel-perfect execution</b>. Work is both <b>visually appealing</b> and optimized for print and digital, blending <b>creative insight</b> with <b>technical know-how</b> to deliver practical, polished and customized solutions.</h2>
+						<h2 class="paragraph">Deliverables aim to capture attention, clarify messages with elegance and elevate brand presence. Professional credentials include <b>Adobe Certified Professional (Photoshop & Illustrator)</b>, <b>UX fundamentals</b> and the <b>ICDL</b> certification.</h2>
+					</div>
+				</div>
+			</section>
+			<section class="hero">
+				<h1>Social Media e Contatti</h1>
+				<div class="container">
+					<img src="/assets/10.png" class="object" alt="Alex_10">
+					<div>
+						<h2 class="paragraph">Over six years of <b>hands-on experience</b> in design and web, with core skills in <b>branding</b>, <b>photo retouching</b>, <b>custom graphics</b> and <b>HTML, CSS and JavaScript</b>.</h2>
+						<h2 class="paragraph">The studio turns ideas into <b>complete visual stories</b>, treating each project as a mini-campaign from <b>strategic concepting</b> to <b>pixel-perfect execution</b>. Work is both <b>visually appealing</b> and optimized for print and digital, blending <b>creative insight</b> with <b>technical know-how</b> to deliver practical, polished and customized solutions.</h2>
+						<h2 class="paragraph">Deliverables aim to capture attention, clarify messages with elegance and elevate brand presence. Professional credentials include <b>Adobe Certified Professional (Photoshop & Illustrator)</b>, <b>UX fundamentals</b> and the <b>ICDL</b> certification.</h2>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="footer-section">
+				<div class="footer-col">
+					<h3>Social Media</h3>
+					<ul>
+						<li class="links"><a href="https://www.instagram.com/alex_natola/" target="_blank"><h4>Instagram</h4></a></li>
+						<li class="links"><a href="https://www.tiktok.com/@alexnatola" target="_blank"><h4>TikTok</h4></a></li>
+						<li class="links"><a href="https://www.youtube.com/channel/UC2WGay5LobEp1_EqkA8tgUQ?sub_confirmation=1" target="_blank"><h4>YouTube</h4></a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h3>Ascolta Ora</h3>
+					<ul>
+						<li class="links"><a href="https://open.spotify.com/intl-it/artist/6qRFKl4SSQYy9E2asvfWx1" target="_blank"><h4>Spotify</h4></a></li>
+						<li class="links"><a href="https://music.apple.com/it/artist/alex-natola/1715736977" target="_blank"><h4>Apple Music</h4></a></li>
+						<li class="links"><a href="https://music.amazon.it/artists/B09ZLTSBYP/alex-natola" target="_blank"><h4>Amazon Music</h4></a></li>
+					</ul>
+				</div>
+			</div>
+			<h4 style="padding: 2rem 0 1rem 0">© 2025 Alex Natola</h4>
+			<h4 style="padding: 1rem 0 1rem 0; font-size: 0.625rem;">Sito web realizzato da: <a class="greatings" href="https://www.instagram.com/im_just_dav" target="_blank">@im_just_dav</a></h4>
+		</footer>
+	</body>
+</html>
