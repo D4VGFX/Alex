@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -23,43 +23,22 @@ jobs:
           node-version: '18'
           cache: 'npm'
 
-      - name: Install dependencies (clean)
-        run: npm ci
+      - name: Clean node_modules and lockfile
+        run: rm -rf node_modules package-lock.json
+
+      - name: Install dependencies
+        run: npm install
 
       - name: Build with Astro
         run: npm run build
         env:
           ROLLUP_DISABLE_NATIVE: "true"
 
-      - name: Detect output directory
-        # cerca dist/ o output/ e scrive OUTPUT_DIR su $GITHUB_ENV
-        run: |
-          if [ -d "./dist" ]; then
-            echo "OUTPUT_DIR=./dist" >> $GITHUB_ENV
-          elif [ -d "./output" ]; then
-            echo "OUTPUT_DIR=./output" >> $GITHUB_ENV
-          else
-            echo "No build output directory found. Listing files for debug:"
-            ls -la
-            exit 1
-          fi
-
-      - name: Verify build output
-        run: |
-          echo Contents of build folder:
-          ls -la $OUTPUT_DIR || true
-          echo If index.html is missing, check your Astro output config.
-
-      - name: Add CNAME file
-        # crea CNAME dentro la cartella reale di output
-        run: |
-          echo alexnatola.com > $OUTPUT_DIR/CNAME
-          echo "CNAME created at $OUTPUT_DIR/CNAME"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{ env.OUTPUT_DIR }}
+          path: ./dist
 
   deploy:
     needs: build
