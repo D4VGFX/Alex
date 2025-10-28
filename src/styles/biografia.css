@@ -552,7 +552,7 @@ hr {
     .object {
         width: 400px;
         height: auto;
-        margin-bottom: 3.5vh;
+        margin: 0 auto 3.5vh auto;
     }
 
     /* menu buttons */
