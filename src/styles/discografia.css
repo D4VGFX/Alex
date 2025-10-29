@@ -71,7 +71,7 @@ strong {
     height: auto;
     border-radius: 2rem;
     box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
-    margin: 0 auto 3.5vh auto;
+    margin: 1.5vh auto 3.5vh auto;
 }
 
 /* menu buttons */
@@ -364,7 +364,7 @@ hr {
         height: auto;
         border-radius: 1.5rem;
         box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
-        margin: 0 auto 3.5vh auto;
+        margin: 1.5vh auto 3.5vh auto;
     }
 
     .side-panel{
