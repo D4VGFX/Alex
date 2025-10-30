@@ -364,6 +364,14 @@ hr {
             var(--panel);
     }
 
+    .see-more {
+        text-decoration: none;
+        color: var(--text);
+    }
+    .see-more:hover {
+        text-decoration: underline;
+    }
+
     /* menu buttons */
     .menu-btn{
         display:flex;
