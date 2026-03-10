@@ -23,7 +23,7 @@ import '../../../styles/questa-realtà.css';
             "name": "Alex Natola",
             "url": "https://www.alexnatola.com",
             "description": "Alex Natola - Sito Ufficiale: Biografia, Discografia e Contatti. Scopri di più su Alex Natola, la sua musica e come metterti in contatto.",
-            "dateModified": "2025-11-26T18:00:00+02:00",
+            "dateModified": "2026-10-03T21:00:00+01:00",
             "contactPoint": {
                 "@type": "ContactPoint",
                 "email": "alexnatola3@gmail.com",
@@ -46,11 +46,10 @@ import '../../../styles/questa-realtà.css';
         </script>
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-FWGMCTPC64"></script>
-			<script>
+		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
-
 			gtag('config', 'G-FWGMCTPC64');
 		</script>
 	</head>
@@ -58,26 +57,20 @@ import '../../../styles/questa-realtà.css';
 		<input type="radio" name="menu" id="menu-none" checked class="menu-input" hidden>
 		<input type="radio" name="menu" id="menu-left" class="menu-input" hidden>
 
+		<div id="panel-overlay"></div>
+
 		<header class="site-header">
-			<!-- LEFT menu button: OPEN label (visible when closed) -->
 			<label for="menu-left" class="menu-btn btn-left open" title="Apri menu sinistro" aria-hidden>
 				<svg class="icon" viewBox="0 0 24 24" aria-hidden><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
 			</label>
-
-			<!-- LEFT close label: VISIBLE quando menu-left è checked; target = menu-none -->
 			<label for="menu-none" class="menu-btn btn-left close" title="Chiudi menu sinistro" aria-hidden>
 				<svg class="icon" viewBox="0 0 24 24" aria-hidden><path d="M15 6L9 12l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 			</label>
-
-			<!-- CENTER: logo (object) -->
 			<div class="logo-wrap">
-				<a href="/">
-					<img src="/assets/logo.svg" class="logo-object" alt="AlexNatola_logo">
-				</a>
+				<a href="/"><img src="/assets/logo.svg" class="logo-object" alt="AlexNatola_logo"></a>
 			</div>
 		</header>
 
-		<!-- LEFT off-canvas panel -->
 		<aside class="side-panel side-left" aria-hidden>
 			<nav>
 				<h3>Menu</h3>
@@ -100,7 +93,6 @@ import '../../../styles/questa-realtà.css';
 			</nav>
 		</aside>
 
-		<!-- Main content -->
 		<main class="main-area">
 			<h1 style="text-align: center;">Questa Realtà</h1>
 			<section class="hero">
@@ -130,22 +122,24 @@ import '../../../styles/questa-realtà.css';
 						</i>
 					</div>
 				</div>
-				<h1 style="margin-top: 2rem">Ascolta Ora Su</h1>
-				<div>
-					<img src="/assets/5.png" class="object" alt="Vecchi_Ragazzi">
+				<div class="social-block">
+					<h1 style="margin-top: 2rem">Ascolta Ora Su</h1>
+					<img src="/assets/5.png" class="object" alt="Questa_Realtà">
+					<div class="social-btns">
+						<button class="apple-btn btn" onclick="window.open('https://music.apple.com/it/album/questa-realt%C3%A0-single/1724783637', '_blank')">
+							<img src="/assets/Apple.svg" alt="Apple_Music" class="icon">
+							<h3>Apple Music</h3>
+						</button>
+						<button class="spotify-btn btn" onclick="window.open('https://open.spotify.com/intl-it/track/1qqFwu7voAo6rkgzcl8Aq2', '_blank')">
+							<img src="/assets/Spotify.svg" alt="Spotify" class="icon">
+							<h3>Spotify</h3>
+						</button>
+						<button class="amazon-btn btn" onclick="window.open('https://music.amazon.in/albums/B0CRRYP457', '_blank')">
+							<img src="/assets/Amazon.svg" alt="Amazon_Music" class="icon">
+							<h3>Amazon Music</h3>
+						</button>
+					</div>
 				</div>
-				<button class="apple-btn btn" onclick="window.open('https://music.apple.com/it/album/sogno-astratto-single/1715737001', '_blank')">
-					<img src="/assets/Apple.svg" alt="Apple_Music" class="icon">
-					<h3>Apple Music</h3>
-				</button>
-				<button class="spotify-btn btn" onclick="window.open('https://open.spotify.com/intl-it/track/6Br1g6mlnM5d9DYTnQU5Y6', '_blank')">
-					<img src="/assets/Spotify.svg" alt="Spotify" class="icon">
-					<h3>Spotify</h3>
-				</button>
-				<button class="amazon-btn btn" onclick="window.open('https://music.amazon.in/albums/B0CM1YSZR7', '_blank')">
-					<img src="/assets/Amazon.svg" alt="Amazon_Music" class="icon">
-					<h3>Amazon Music</h3>
-				</button>
 			</section>
 		</main>
 
@@ -174,8 +168,10 @@ import '../../../styles/questa-realtà.css';
 					</ul>
 				</div>
 			</div>
-			<h4 style="padding: 2rem 0 1rem 0">© 2025 Alex Natola</h4>
-			<h4 style="padding: 1rem 0 1rem 0; font-size: 0.625rem;">Sito web realizzato da: <a class="greatings" href="https://www.instagram.com/im_just_dav" target="_blank">@im_just_dav</a></h4>
+			<h4 style="padding: 2rem 0 1rem 0">© 2026 Alex Natola</h4>
+			<h4 style="padding: 1rem 0 1rem 0; font-size: 0.625rem;">Sito web realizzato da: <a class="greatings" href="https://www.instagram.com/_davstudios" target="_blank">@_davstudios</a></h4>
 		</footer>
+
+		<script>import '../../../scripts/questa-realtà.js'</script>
 	</body>
 </html>

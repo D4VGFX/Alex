@@ -23,7 +23,7 @@ import '../../styles/biografia.css';
             "name": "Alex Natola",
             "url": "https://www.alexnatola.com",
             "description": "Alex Natola - Sito Ufficiale: Biografia, Discografia e Contatti. Scopri di più su Alex Natola, la sua musica e come metterti in contatto.",
-            "dateModified": "2025-11-26T18:00:00+02:00",
+            "dateModified": "2026-10-03T21:00:00+01:00",
             "contactPoint": {
                 "@type": "ContactPoint",
                 "email": "alexnatola3@gmail.com",
@@ -58,6 +58,9 @@ import '../../styles/biografia.css';
 		<input type="radio" name="menu" id="menu-none" checked class="menu-input" hidden>
 		<input type="radio" name="menu" id="menu-left" class="menu-input" hidden>
 
+		<!-- Overlay: click fuori per chiudere il menu -->
+		<div id="panel-overlay"></div>
+
 		<header class="site-header">
 			<!-- LEFT menu button: OPEN label (visible when closed) -->
 			<label for="menu-left" class="menu-btn btn-left open" title="Apri menu sinistro" aria-hidden>
@@ -82,7 +85,7 @@ import '../../styles/biografia.css';
 			<nav>
 				<h3>Menu</h3>
 				<ul>
-					<li class="links"><a href="/"><h4>Home</></h4></a></li>
+					<li class="links"><a href="/"><h4>Home</h4></a></li>
 					<li class="links"><a href="#"><h4><strong>Biografia</strong></h4></a></li>
 					<li class="links"><a href="/discografia/"><h4>Discografia</h4></a></li>
 				</ul>
@@ -116,7 +119,7 @@ import '../../styles/biografia.css';
 				<div class="container">
 					<img src="/assets/8.png" class="object" alt="Alex_8">
 					<div>
-						<h2 class="paragraph"><b>Alex Natola</b> è un <b>cantautore</b> originario di <b>Fasano</b> (BR), da sempre immerso nel mondo della <b>musica</b>. Fin da <b>bambino</b> ha mostrato una naturale inclinazione per il canto e per il <b>pianoforte</b>, coltivando una sensibilità artistica che oggi caratterizza il suo stile. Con una passione per il <b>songwriting</b>, Alex ha deciso di trasformare l’amore per la musica in un percorso professionale, iscrivendosi al <b>Conservatorio “Nino Rota” di Monopoli</b>. Qui sta perfezionando la sua voce all’interno dei <b>percorsi di canto pop/rock</b>, confermando un serio <b>percorso accademico</b> in ambito <b>vocale</b>. Grazie a questa formazione, riesce a fondere tecnica e spontaneità nelle sue interpretazioni, proponendosi non solo come interprete ma anche come autore.</h2>
+						<h2 class="paragraph"><b>Alex Natola</b> è un <b>cantautore</b> originario di <b>Fasano</b> (BR), da sempre immerso nel mondo della <b>musica</b>. Fin da <b>bambino</b> ha mostrato una naturale inclinazione per il canto e per il <b>pianoforte</b>, coltivando una sensibilità artistica che oggi caratterizza il suo stile. Con una passione per il <b>songwriting</b>, Alex ha deciso di trasformare l'amore per la musica in un percorso professionale, iscrivendosi al <b>Conservatorio "Nino Rota" di Monopoli</b>. Qui sta perfezionando la sua voce all'interno dei <b>percorsi di canto pop/rock</b>, confermando un serio <b>percorso accademico</b> in ambito <b>vocale</b>. Grazie a questa formazione, riesce a fondere tecnica e spontaneità nelle sue interpretazioni, proponendosi non solo come interprete ma anche come autore.</h2>
 					</div>
 				</div>
 			</section>
@@ -125,7 +128,7 @@ import '../../styles/biografia.css';
 				<div class="container">
 					<img src="/assets/9.png" class="object" alt="Alex_9">
 					<div>
-						<h2 class="paragraph">Nel corso della sua carriera, Alex ha pubblicato diversi <b>singoli</b> distribuiti sulle principali <b>piattaforme musicali</b>, che testimoniano la sua evoluzione artistica. Tra questi figurano <a class="song" href="/discografia/sogno-astratto"><strong>Sogno Astratto</strong></a> (2023), un brano dal tono sognante e riflessivo, e più recentemente <a class="song" href="/discografia/questa-realtà"><strong>Questa Realtà</strong></a>, <a class="song" href="/discografia/fiori-nel-deserto"><strong>Fiori Nel Deserto</strong></a> e <a class="song" href="/discografia/vecchi-ragazzi"><strong>Vecchi Ragazzi</strong></a> (2024), tracce che hanno ampliato il suo pubblico ben oltre il territorio locale. Attraverso queste uscite, Alex esplora tematiche come la nostalgia, la crescita personale e il contrasto tra i sogni e la realtà quotidiana. Distribuite su piattaforme come <a class="song" href="https://open.spotify.com/intl-it/artist/6qRFKl4SSQYy9E2asvfWx1" target="_blank"><strong>Spotify</strong></a>, <a class="song" href="https://music.amazon.it/artists/B09ZLTSBYP/alex-natola" target="_blank"><strong>Amazon Music</strong></a> e <a class="song" href="https://music.apple.com/it/artist/alex-natola/1715736977" target="_blank"><strong>Apple Music</strong></a>, le sue canzoni permettono di apprezzare sia la voce sia il suo approccio alla composizione, con arrangiamenti pensati per valorizzare il pianoforte, la melodia e l’identità del testo.</h2>
+						<h2 class="paragraph">Nel corso della sua carriera, Alex ha pubblicato diversi <b>singoli</b> distribuiti sulle principali <b>piattaforme musicali</b>, che testimoniano la sua evoluzione artistica. Tra questi figurano <a class="song" href="/discografia/sogno-astratto"><strong>Sogno Astratto</strong></a> (2023), un brano dal tono sognante e riflessivo, e più recentemente <a class="song" href="/discografia/questa-realtà"><strong>Questa Realtà</strong></a>, <a class="song" href="/discografia/fiori-nel-deserto"><strong>Fiori Nel Deserto</strong></a> e <a class="song" href="/discografia/vecchi-ragazzi"><strong>Vecchi Ragazzi</strong></a> (2024), tracce che hanno ampliato il suo pubblico ben oltre il territorio locale. Attraverso queste uscite, Alex esplora tematiche come la nostalgia, la crescita personale e il contrasto tra i sogni e la realtà quotidiana. Distribuite su piattaforme come <a class="song" href="https://open.spotify.com/intl-it/artist/6qRFKl4SSQYy9E2asvfWx1" target="_blank"><strong>Spotify</strong></a>, <a class="song" href="https://music.amazon.it/artists/B09ZLTSBYP/alex-natola" target="_blank"><strong>Amazon Music</strong></a> e <a class="song" href="https://music.apple.com/it/artist/alex-natola/1715736977" target="_blank"><strong>Apple Music</strong></a>, le sue canzoni permettono di apprezzare sia la voce sia il suo approccio alla composizione, con arrangiamenti pensati per valorizzare il pianoforte, la melodia e l'identità del testo.</h2>
 					</div>
 				</div>
 			</section>
@@ -134,7 +137,7 @@ import '../../styles/biografia.css';
 				<div class="container">
 					<img src="/assets/10.png" class="object" alt="Alex_10">
 					<div>
-						<h2 class="paragraph">Attivo nella scena live pugliese, Alex ha preso parte a diverse <b>rassegne</b> e serate locali, facendo tappa a Fasano e nei dintorni. Tra le sue esibizioni vi sono performance presso la <b>Casina Municipale</b> e i <b>Portici di Fasano</b>, oltre ad altri eventi nel territorio che gli hanno consentito di rafforzare il legame con il pubblico locale e affinare la sua presenza scenica. Un momento significativo della sua carriera è la partecipazione al programma televisivo <b>“Stella del Sud Celebrity”</b>, condotto da <b>Vito Diomede</b>, con registrazioni realizzate anche al <b>Teatro Van Westerhout</b>. Durante questo contesto, Alex ha avuto modo di esibirsi su un palcoscenico importante e confrontarsi con ospiti di richiamo. Inoltre, ha condiviso il palco o ha fatto da opening per artisti come <b>BNKR44</b> e <b>Young Snapp</b>, inserendosi attivamente in contesti musicali più ampi e mostrando la sua versatilità. Questo mix di formazione, uscite discografiche ed eventi live lo posiziona come artista emergente che lavora concretamente per farsi spazio.</h2>
+						<h2 class="paragraph">Attivo nella scena live pugliese, Alex ha preso parte a diverse <b>rassegne</b> e serate locali, facendo tappa a Fasano e nei dintorni. Tra le sue esibizioni vi sono performance presso la <b>Casina Municipale</b> e i <b>Portici di Fasano</b>, oltre ad altri eventi nel territorio che gli hanno consentito di rafforzare il legame con il pubblico locale e affinare la sua presenza scenica. Un momento significativo della sua carriera è la partecipazione al programma televisivo <b>"Stella del Sud Celebrity"</b>, condotto da <b>Vito Diomede</b>, con registrazioni realizzate anche al <b>Teatro Van Westerhout</b>. Durante questo contesto, Alex ha avuto modo di esibirsi su un palcoscenico importante e confrontarsi con ospiti di richiamo. Inoltre, ha condiviso il palco o ha fatto da opening per artisti come <b>BNKR44</b> e <b>Young Snapp</b>, inserendosi attivamente in contesti musicali più ampi e mostrando la sua versatilità. Questo mix di formazione, uscite discografiche ed eventi live lo posiziona come artista emergente che lavora concretamente per farsi spazio.</h2>
 					</div>
 				</div>
 			</section>
@@ -165,8 +168,10 @@ import '../../styles/biografia.css';
 					</ul>
 				</div>
 			</div>
-			<h4 style="padding: 2rem 0 1rem 0">© 2025 Alex Natola</h4>
-			<h4 style="padding: 1rem 0 1rem 0; font-size: 0.625rem;">Sito web realizzato da: <a class="greatings" href="https://www.instagram.com/im_just_dav" target="_blank">@im_just_dav</a></h4>
+			<h4 style="padding: 2rem 0 1rem 0">© 2026 Alex Natola</h4>
+			<h4 style="padding: 1rem 0 1rem 0; font-size: 0.625rem;">Sito web realizzato da: <a class="greatings" href="https://www.instagram.com/_davstudios" target="_blank">@_davstudios</a></h4>
 		</footer>
+
+		<script>import '../../scripts/biografia.js'</script>
 	</body>
 </html>

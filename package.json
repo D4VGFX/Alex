@@ -1,7 +1,7 @@
 {
   "name": "Alex Natola",
   "type": "module",
-  "version": "v2.0.0",
+  "version": "v3.0",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",

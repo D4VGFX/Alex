@@ -23,7 +23,7 @@ import '../../styles/discografia.css';
             "name": "Alex Natola",
             "url": "https://www.alexnatola.com",
             "description": "Alex Natola - Sito Ufficiale: Biografia, Discografia e Contatti. Scopri di più su Alex Natola, la sua musica e come metterti in contatto.",
-            "dateModified": "2025-11-26T18:00:00+02:00",
+            "dateModified": "2026-10-03T21:00:00+01:00",
             "contactPoint": {
                 "@type": "ContactPoint",
                 "email": "alexnatola3@gmail.com",
@@ -57,6 +57,9 @@ import '../../styles/discografia.css';
 	<body>
 		<input type="radio" name="menu" id="menu-none" checked class="menu-input" hidden>
 		<input type="radio" name="menu" id="menu-left" class="menu-input" hidden>
+
+		<!-- Overlay: click fuori per chiudere il menu -->
+		<div id="panel-overlay"></div>
 
 		<header class="site-header">
 			<!-- LEFT menu button: OPEN label (visible when closed) -->
@@ -110,91 +113,107 @@ import '../../styles/discografia.css';
 					<img src="/assets/4.png" class="object" alt="Sogno_Astratto">
 					<div>
 						<h2 class="paragraph">La canzone parla di un amore idealizzato: la persona amata è un <b>sogno astratto</b> e una <b>luce</b> che illumina i <b>pensieri</b>. Le immagini stagionali e il paragone con un <b>dipinto</b> sottolineano la profondità e la trasformazione del sentimento (da <b>inverno</b> a <b>estate</b>, <b>autunno</b>, <b>primavera</b>). I dettagli quotidiani (cellulare, finestrini chiusi, ascoltare <b>musica</b>) mostrano <b>solitudine</b> e <b>vulnerabilità</b>, dove si mescolano <b>amore</b> e <b>dolore</b>. Il finale è di speranza e decisione: il sogno può diventare <b>realtà</b>.</h2>
-						<h2 class="paragraph"><a class="song" href="sogno-astratto"><strong>Leggi il testo...</strong></a></h2>
+						<h2 class="paragraph"><a class="song" href="/discografia/sogno-astratto"><strong>Leggi il testo...</strong></a></h2>
 					</div>
 				</div>
-				<h1 style="margin-top: 2rem">Ascolta Ora Su</h1>
-				<button class="apple-btn btn" onclick="window.open('https://music.apple.com/it/album/sogno-astratto-single/1715737001', '_blank')">
-					<img src="/assets/Apple.svg" alt="Apple_Music" class="icon">
-					<h3>Apple Music</h3>
-				</button>
-				<button class="spotify-btn btn" onclick="window.open('https://open.spotify.com/intl-it/track/6Br1g6mlnM5d9DYTnQU5Y6', '_blank')">
-					<img src="/assets/Spotify.svg" alt="Spotify" class="icon">
-					<h3>Spotify</h3>
-				</button>
-				<button class="amazon-btn btn" onclick="window.open('https://music.amazon.in/albums/B0CM1YSZR7', '_blank')">
-					<img src="/assets/Amazon.svg" alt="Amazon_Music" class="icon">
-					<h3>Amazon Music</h3>
-				</button>
+				<div class="social-block">
+					<h1>Ascolta Ora Su</h1>
+					<div class="social-btns">
+						<button class="apple-btn btn" onclick="window.open('https://music.apple.com/it/album/sogno-astratto-single/1715737001', '_blank')">
+							<img src="/assets/Apple.svg" alt="Apple_Music" class="icon">
+							<h3>Apple Music</h3>
+						</button>
+						<button class="spotify-btn btn" onclick="window.open('https://open.spotify.com/intl-it/track/6Br1g6mlnM5d9DYTnQU5Y6', '_blank')">
+							<img src="/assets/Spotify.svg" alt="Spotify" class="icon">
+							<h3>Spotify</h3>
+						</button>
+						<button class="amazon-btn btn" onclick="window.open('https://music.amazon.in/albums/B0CM1YSZR7', '_blank')">
+							<img src="/assets/Amazon.svg" alt="Amazon_Music" class="icon">
+							<h3>Amazon Music</h3>
+						</button>
+					</div>
+				</div>
 			</section>
 			<section class="hero">
 				<h1>Questa Realtà</h1>
 				<div class="container">
 					<img src="/assets/5.png" class="object" alt="Questa_Realtà">
 					<div>
-						<h2 class="paragraph">La canzone esprime il dolore di una <b>separazione</b> e la difficoltà di <b>comunicare</b> dopo una storia intensa. Il protagonista non riesce più a <b>scrivere</b> o a <b>parlare</b> alla persona amata, sommerso dai <b>pensieri</b> e dalla <b>confusione</b> (“come il Medioevo”). Racconta di una relazione fatta di <b>verità condivise</b>, <b>musica</b> e <b>ricordi</b> che ormai fanno male. L’amore è diventato una <b>ferita</b> incisa sulla <b>pelle</b>, segnata da <b>delusioni</b> e <b>solitudine</b>. Nonostante tutto, rimane un forte legame emotivo: i <b>problemi</b> dell’altro sono diventati anche i suoi, a dimostrazione di un <b>amore autentico</b> ma ormai <b>sofferto</b> e intrappolato nella <b>realtà</b>.</h2>
-						<h2 class="paragraph"><a class="song" href="questa-realtà"><strong>Leggi il testo...</strong></a></h2>
+						<h2 class="paragraph">La canzone esprime il dolore di una <b>separazione</b> e la difficoltà di <b>comunicare</b> dopo una storia intensa. Il protagonista non riesce più a <b>scrivere</b> o a <b>parlare</b> alla persona amata, sommerso dai <b>pensieri</b> e dalla <b>confusione</b> ("come il Medioevo"). Racconta di una relazione fatta di <b>verità condivise</b>, <b>musica</b> e <b>ricordi</b> che ormai fanno male. L'amore è diventato una <b>ferita</b> incisa sulla <b>pelle</b>, segnata da <b>delusioni</b> e <b>solitudine</b>. Nonostante tutto, rimane un forte legame emotivo: i <b>problemi</b> dell'altro sono diventati anche i suoi, a dimostrazione di un <b>amore autentico</b> ma ormai <b>sofferto</b> e intrappolato nella <b>realtà</b>.</h2>
+						<h2 class="paragraph"><a class="song" href="/discografia/questa-realtà"><strong>Leggi il testo...</strong></a></h2>
 					</div>
 				</div>
-				<h1 style="margin-top: 2rem">Ascolta Ora Su</h1>
-				<button class="apple-btn btn" onclick="window.open('https://music.apple.com/it/album/questa-realt%C3%A0-single/1724783637', '_blank')">
-					<img src="/assets/Apple.svg" alt="Apple_Music" class="icon">
-					<h3>Apple Music</h3>
-				</button>
-				<button class="spotify-btn btn" onclick="window.open('https://open.spotify.com/intl-it/track/1qqFwu7voAo6rkgzcl8Aq2', '_blank')">
-					<img src="/assets/Spotify.svg" alt="Spotify" class="icon">
-					<h3>Spotify</h3>
-				</button>
-				<button class="amazon-btn btn" onclick="window.open('https://music.amazon.in/albums/B0CRRYP457', '_blank')">
-					<img src="/assets/Amazon.svg" alt="Amazon_Music" class="icon">
-					<h3>Amazon Music</h3>
-				</button>
+				<div class="social-block">
+					<h1>Ascolta Ora Su</h1>
+					<div class="social-btns">
+						<button class="apple-btn btn" onclick="window.open('https://music.apple.com/it/album/questa-realt%C3%A0-single/1724783637', '_blank')">
+							<img src="/assets/Apple.svg" alt="Apple_Music" class="icon">
+							<h3>Apple Music</h3>
+						</button>
+						<button class="spotify-btn btn" onclick="window.open('https://open.spotify.com/intl-it/track/1qqFwu7voAo6rkgzcl8Aq2', '_blank')">
+							<img src="/assets/Spotify.svg" alt="Spotify" class="icon">
+							<h3>Spotify</h3>
+						</button>
+						<button class="amazon-btn btn" onclick="window.open('https://music.amazon.in/albums/B0CRRYP457', '_blank')">
+							<img src="/assets/Amazon.svg" alt="Amazon_Music" class="icon">
+							<h3>Amazon Music</h3>
+						</button>
+					</div>
+				</div>
 			</section>
 			<section class="hero">
 				<h1>Fiori Nel Deserto</h1>
 				<div class="container">
 					<img src="/assets/6.png" class="object" alt="Fiori_Nel_Deserto">
 					<div>
-						<h2 class="paragraph">Il testo racconta un <b>amore sospeso</b> tra <b>dubbio e speranza</b>. L’io narrante si sente <b>smarrito</b> e lontano dall’altro, ma continua a credere che si ritroveranno nei momenti importanti. L’idea dei <b>supereroi</b> e dei <b>fiori nel deserto</b> simboleggia la <b>forza del legame</b>, capace di resistere alle difficoltà e di rinascere anche dove tutto sembra spento. Le immagini del <b>mare</b> e dell’<b>estate</b> evocano i ricordi di un tempo felice, in contrasto con la malinconia presente. È una canzone che parla di <b>amore vero</b>, di <b>memorie che restano</b> e di <b>speranza</b> nel ritrovarsi, nonostante la distanza e il tempo.</h2>
-						<h2 class="paragraph"><a class="song" href="fiori-nel-deserto"><strong>Leggi il testo...</strong></a></h2>
+						<h2 class="paragraph">Il testo racconta un <b>amore sospeso</b> tra <b>dubbio e speranza</b>. L'io narrante si sente <b>smarrito</b> e lontano dall'altro, ma continua a credere che si ritroveranno nei momenti importanti. L'idea dei <b>supereroi</b> e dei <b>fiori nel deserto</b> simboleggia la <b>forza del legame</b>, capace di resistere alle difficoltà e di rinascere anche dove tutto sembra spento. Le immagini del <b>mare</b> e dell'<b>estate</b> evocano i ricordi di un tempo felice, in contrasto con la malinconia presente. È una canzone che parla di <b>amore vero</b>, di <b>memorie che restano</b> e di <b>speranza</b> nel ritrovarsi, nonostante la distanza e il tempo.</h2>
+						<h2 class="paragraph"><a class="song" href="/discografia/fiori-nel-deserto"><strong>Leggi il testo...</strong></a></h2>
 					</div>
 				</div>
-				<h1 style="margin-top: 2rem">Ascolta Ora Su</h1>
-				<button class="apple-btn btn" onclick="window.open('https://music.apple.com/it/album/fiori-nel-deserto-single/1732048232', '_blank')">
-					<img src="/assets/Apple.svg" alt="Apple_Music" class="icon">
-					<h3>Apple Music</h3>
-				</button>
-				<button class="spotify-btn btn" onclick="window.open('https://open.spotify.com/intl-it/track/1dE34QxCGmm7Ws9CcHDvoL', '_blank')">
-					<img src="/assets/Spotify.svg" alt="Spotify" class="icon">
-					<h3>Spotify</h3>
-				</button>
-				<button class="amazon-btn btn" onclick="window.open('https://music.amazon.in/albums/B0D88BGV3G', '_blank')">
-					<img src="/assets/Amazon.svg" alt="Amazon_Music" class="icon">
-					<h3>Amazon Music</h3>
-				</button>
+				<div class="social-block">
+					<h1>Ascolta Ora Su</h1>
+					<div class="social-btns">
+						<button class="apple-btn btn" onclick="window.open('https://music.apple.com/it/album/fiori-nel-deserto-single/1732048232', '_blank')">
+							<img src="/assets/Apple.svg" alt="Apple_Music" class="icon">
+							<h3>Apple Music</h3>
+						</button>
+						<button class="spotify-btn btn" onclick="window.open('https://open.spotify.com/intl-it/track/1dE34QxCGmm7Ws9CcHDvoL', '_blank')">
+							<img src="/assets/Spotify.svg" alt="Spotify" class="icon">
+							<h3>Spotify</h3>
+						</button>
+						<button class="amazon-btn btn" onclick="window.open('https://music.amazon.in/albums/B0D88BGV3G', '_blank')">
+							<img src="/assets/Amazon.svg" alt="Amazon_Music" class="icon">
+							<h3>Amazon Music</h3>
+						</button>
+					</div>
+				</div>
 			</section>
 			<section class="hero">
 				<h1>Vecchi Ragazzi</h1>
 				<div class="container">
 					<img src="/assets/7.png" class="object" alt="Vecchi_Ragazzi">
 					<div>
-						<h2 class="paragraph">La canzone parla di un <b>legame profondo</b> e <b>intimo</b> tra due persone. L’io narrante trova nella persona amata una <b>speranza</b> e una <b>luce</b> che lo guida anche nel <b>buio</b>, e desidera <b>condividerle la vita</b>, sostenendola nei momenti di <b>paura</b> o <b>solitudine</b>. I ricordi dei “<b>vecchi ragazzi</b>” rappresentano un <b>passato condiviso</b> fatto di gioie e dolori, mentre la promessa di riportarla con sé simboleggia <b>protezione</b> e <b>vicinanza emotiva</b>.</h2>
-						<h2 class="paragraph"><a class="song" href="vecchi-ragazzi"><strong>Leggi il testo...</strong></a></h2>
+						<h2 class="paragraph">La canzone parla di un <b>legame profondo</b> e <b>intimo</b> tra due persone. L'io narrante trova nella persona amata una <b>speranza</b> e una <b>luce</b> che lo guida anche nel <b>buio</b>, e desidera <b>condividerle la vita</b>, sostenendola nei momenti di <b>paura</b> o <b>solitudine</b>. I ricordi dei "<b>vecchi ragazzi</b>" rappresentano un <b>passato condiviso</b> fatto di gioie e dolori, mentre la promessa di riportarla con sé simboleggia <b>protezione</b> e <b>vicinanza emotiva</b>.</h2>
+						<h2 class="paragraph"><a class="song" href="/discografia/vecchi-ragazzi"><strong>Leggi il testo...</strong></a></h2>
 					</div>
 				</div>
-				<h1 style="margin-top: 2rem">Ascolta Ora Su</h1>
-				<button class="apple-btn btn" onclick="window.open('https://music.apple.com/it/album/vecchi-ragazzi-single/1742048232', '_blank')">
-					<img src="/assets/Apple.svg" alt="Apple_Music" class="icon">
-					<h3>Apple Music</h3>
-				</button>
-				<button class="spotify-btn btn" onclick="window.open('https://open.spotify.com/intl-it/track/2m9CIYgzhaqGT7Dyvdx9QJ', '_blank')">
-					<img src="/assets/Spotify.svg" alt="Spotify" class="icon">
-					<h3>Spotify</h3>
-				</button>
-				<button class="amazon-btn btn" onclick="window.open('https://music.amazon.in/albums/B0DPMVJJMH', '_blank')">
-					<img src="/assets/Amazon.svg" alt="Amazon_Music" class="icon">
-					<h3>Amazon Music</h3>
-				</button>
+				<div class="social-block">
+					<h1>Ascolta Ora Su</h1>
+					<div class="social-btns">
+						<button class="apple-btn btn" onclick="window.open('https://music.apple.com/it/album/vecchi-ragazzi-single/1742048232', '_blank')">
+							<img src="/assets/Apple.svg" alt="Apple_Music" class="icon">
+							<h3>Apple Music</h3>
+						</button>
+						<button class="spotify-btn btn" onclick="window.open('https://open.spotify.com/intl-it/track/2m9CIYgzhaqGT7Dyvdx9QJ', '_blank')">
+							<img src="/assets/Spotify.svg" alt="Spotify" class="icon">
+							<h3>Spotify</h3>
+						</button>
+						<button class="amazon-btn btn" onclick="window.open('https://music.amazon.in/albums/B0DPMVJJMH', '_blank')">
+							<img src="/assets/Amazon.svg" alt="Amazon_Music" class="icon">
+							<h3>Amazon Music</h3>
+						</button>
+					</div>
+				</div>
 			</section>
 		</main>
 
@@ -223,8 +242,10 @@ import '../../styles/discografia.css';
 					</ul>
 				</div>
 			</div>
-			<h4 style="padding: 2rem 0 1rem 0">© 2025 Alex Natola</h4>
-			<h4 style="padding: 1rem 0 1rem 0; font-size: 0.625rem;">Sito web realizzato da: <a class="greatings" href="https://www.instagram.com/im_just_dav" target="_blank">@im_just_dav</a></h4>
+			<h4 style="padding: 2rem 0 1rem 0">© 2026 Alex Natola</h4>
+			<h4 style="padding: 1rem 0 1rem 0; font-size: 0.625rem;">Sito web realizzato da: <a class="greatings" href="https://www.instagram.com/_davstudios" target="_blank">@_davstudios</a></h4>
 		</footer>
+
+		<script>import '../../scripts/discografia.js'</script>
 	</body>
 </html>
